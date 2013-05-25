@@ -3,7 +3,7 @@ Horse Grade
 This app will compare winning time against track record and will grade performance. App was made using Sencha Architect and can be found on GitHub or http://smallprogramdesign.com. I am still learning GitHub so bear with me as I am still making mistakes.
 
 
-You can test app out by typing http://smallprogramdesin.com/myapp. 
+You can test app out by typing http://smallprogramdesign.com/myapp. 
 
 example 1.) ORB race 12 PIMLICO very first entry which will be results from Kentuckey Derby.
 
