@@ -33,3 +33,8 @@ Note: entering Loss convert 1 1/2 to decimal 1.5
 
 
 Formula is Record/(Win -(Loss * 1/5))*100
+
+Record = Track Record for race distance
+Win = Winning time of race
+Loss = Length Loss BY in decimal (ex. 3 1/2 equals 3.5)
+
