@@ -30,3 +30,6 @@ Your Grade is 98.35
 
 
 Note: entering Loss convert 1 1/2 to decimal 1.5
+
+
+Formula is Record/(Win -(Loss * 1/5))*100
