@@ -44,11 +44,17 @@ Ext.define('MyApp.view.MyFieldSet', {
             {
                 xtype: 'button',
                 handler: function(button, event) {
-                    var win =  Ext.getCmp('Win').getValue();  // win id
-                    var loss =  Ext.getCmp('Loss').getValue();  // loss id
-                    var record =  Ext.getCmp('Record').getValue();  // record id 
-                    alert( "Horse Grade is " + ((record/(win - (loss * 1/5)))*100).toFixed(2));
-
+                    var win =  parseFloat(Ext.getCmp('Win').getValue());  // win id
+                    var loss = parseFloat((Ext.getCmp('Loss').getValue()*1/5));  // loss id
+                    var record =  parseFloat(Ext.getCmp('Record').getValue());  // record id 
+                    var grade = (record/(win+loss)*100).toFixed(2);
+                                             
+                    
+                   alert(    "Win is " + win + "\n" +
+                   		"Loss is " + loss + "\n" +
+                   		"Record is " + record + "\n\n" + 
+                   		"Horse Grade is " + grade);
+ 
                 },
                 ui: 'confirm',
                 text: 'Calculate'
