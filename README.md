@@ -36,5 +36,5 @@ Record = Track Record race distance;
 Win = Winning Time;
 Loss = Length Loss By in decimals (ex. 3 1/2 equals 3.5);
 
-Note : Time is entered without colon and superscript is entered with a decimal from racing form.
+Note : Time is entered without colon and superscript is entered with a decimal from racing form;
 
