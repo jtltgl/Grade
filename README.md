@@ -14,27 +14,22 @@ Track record time of 2:01.4 at PIMLICO for 1 1/4 miles was by Horse name Manzott
 
 So: 
 
-Win = 202.89
-Loss = 0
-Record = 201.4
+Win = 202.89;
+Loss = 0;
+Record = 201.4;
 
-Your Grade is 99.27
+Your Grade is 99.27;
 
-now OXBOW race 12 PIMLICO very first entry
+now OXBOW race 12 PIMLICO very first entry;
 
-Win - 202.89
-Loss = 9.5
-Record = 201.4
+Win - 202.89;
+Loss = 9.5;
+Record = 201.4;
 
-Your Grade is 98.35
-
-
-Note: entering Loss convert 1 1/2 to decimal 1.5
+Your Grade is 98.35;
 
 
-Formula is Record/(Win -(Loss * 1/5))*100
+Note: entering Loss convert 1 1/2 to decimal 1.5;
 
-Record = Track Record for race distance
-Win = Winning time of race
-Loss = Length Loss BY in decimal (ex. 3 1/2 equals 3.5)
 
+Formula is Record/(Win -(Loss * 1/5))*100;
