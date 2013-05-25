@@ -14,19 +14,19 @@ First you need Track Records. You can find most track records on Web.
 
 So: 
 
-Win = 202.89
-Loss = 
-Record = 201.4
+Win = 202.89.
+Loss = .
+Record = 201.4.
 
-Your Grade is 99.27
+Your Grade is 99.27.
 
-now OXBOW race 12 PIMLICO very first entry
+now OXBOW race 12 PIMLICO very first entry.
 
-Win - 202.89
-Loss = 9.5
-Record = 201.4
+Win - 202.89.
+Loss = 9.5.
+Record = 201.4.
 
-Your Grade is 98.35
+Your Grade is 98.35.
 
 
-Note: entering Loss convert 1 1/2 to decimal 1.5
+Note: entering Loss convert 1 1/2 to decimal 1.5.
