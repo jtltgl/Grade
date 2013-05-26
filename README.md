@@ -1,6 +1,6 @@
 Grade
 =====
-Values for App ORB first entry
+Values for App ORB first entry 1 1/4 mile
 
 
 Win = 202.89
