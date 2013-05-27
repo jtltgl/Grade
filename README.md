@@ -13,28 +13,28 @@ Track record time of 2:01.4 at PIMLICO for 1 1/4 miles was by Horse name Manzott
 
 
 
-So ORB race 12 PIMLICO very first entry which will be results from Kentuckey Derby: 
+Values for App:
 
-Win = 202.89;
-Loss = 0;
-Record = 201.4;
-
-Your Grade is 99.27;
-
-now OXBOW race 12 PIMLICO very first entry;
-
-Win - 202.89;
-Loss = 9.5;
-Record = 201.4;
-
-Your Grade is 98.35;
+ORB's first entry Race 12 at PIMLICO at  1 1/4 mile
 
 
-Formula is Record/(Win -(Loss * 1/5))*100;
+Win = 202.89
 
-Record = Track Record race distance;
-Win = Winning Time;
-Loss = Length Loss By in decimals (ex. 3 1/2 equals 3.5);
+Loss = 0
 
-Note : Time is entered without colon and superscript is entered with a decimal from racing form;
+Record = 201.4
 
+
+OXBOW's first entry Race 12 at PIMLICO at  1 1/4 mile
+
+
+Win = 202.89
+
+Loss = 9.5
+
+Record = 201.4
+
+
+
+
+Note : This was taken straight from racing form from PIMLICO. ORB's first entry which was the results from Kentucky Derby was 2:02<sup>89</sup>. Notice the colon on time from race is left out and the superscript is entered as a decimal. I found track records from PIMLICO here : Http://www.pimlico.com/race-info/track-records
