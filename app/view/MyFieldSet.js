@@ -17,29 +17,28 @@ Ext.define('MyApp.view.MyFieldSet', {
     extend: 'Ext.form.FieldSet',
 
     config: {
-        height: 461,
-        width: 299,
-        title: 'Grade',
+        height: 329,
+        ui: '',
+        width: 302,
+        scrollable: false,
         items: [
             {
                 xtype: 'textfield',
                 id: 'Win',
-                label: 'Win'
+                label: 'Win',
+                placeHolder: 'ex. 202.89'
             },
             {
                 xtype: 'textfield',
                 id: 'Loss',
-                label: 'Loss'
+                label: 'Loss',
+                placeHolder: 'ex. 9.5'
             },
             {
                 xtype: 'textfield',
                 id: 'Record',
-                label: 'Record'
-            },
-            {
-                xtype: 'image',
-                height: 210,
-                src: 'http://smallprogramdesign.com/myapp//horseracing.jpg'
+                label: 'Record',
+                placeHolder: 'ex. 201.4'
             },
             {
                 xtype: 'button',
@@ -48,16 +47,23 @@ Ext.define('MyApp.view.MyFieldSet', {
                     var loss = parseFloat((Ext.getCmp('Loss').getValue()*1/5));  // loss id
                     var record =  parseFloat(Ext.getCmp('Record').getValue());  // record id 
                     var grade = (record/(win+loss)*100).toFixed(2);
-                                             
-                    
-                   alert(    "Win is " + win + "\n" +
-                   		"Loss is " + loss + "\n" +
-                   		"Record is " + record + "\n\n" + 
-                   		"Horse Grade is " + grade);
- 
+
+
+                    alert(	"Win is " + win + "\n" +
+                    "Loss is " + loss + "\n" +
+                    "Record is " + record + "\n\n" + 
+                    "Horse Grade is " + grade);
+
                 },
+                height: 33,
                 ui: 'confirm',
                 text: 'Calculate'
+            },
+            {
+                xtype: 'image',
+                height: 166,
+                width: 299,
+                src: 'http://smallprogramdesign.com/myapp/horseracing.jpg'
             }
         ]
     }
