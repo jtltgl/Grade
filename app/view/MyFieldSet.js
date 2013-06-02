@@ -17,28 +17,27 @@ Ext.define('MyApp.view.MyFieldSet', {
     extend: 'Ext.form.FieldSet',
 
     config: {
-        height: 329,
+        height: 385,
         ui: '',
         width: 302,
-        scrollable: false,
         items: [
             {
                 xtype: 'textfield',
                 id: 'Win',
                 label: 'Win',
-                placeHolder: 'ex. 202.89'
+                placeHolder: 'Winning Time'
             },
             {
                 xtype: 'textfield',
                 id: 'Loss',
                 label: 'Loss',
-                placeHolder: 'ex. 9.5'
+                placeHolder: 'Length Loss By'
             },
             {
                 xtype: 'textfield',
                 id: 'Record',
                 label: 'Record',
-                placeHolder: 'ex. 201.4'
+                placeHolder: 'Track Record'
             },
             {
                 xtype: 'button',
@@ -49,8 +48,41 @@ Ext.define('MyApp.view.MyFieldSet', {
                     var grade = (record/(win+loss)*100).toFixed(2);
 
 
+                    function isNumber(n) {
+                        return !isNaN(parseFloat(n)) && isFinite(n);
+                    }
+
+                    if(isNumber(win)===false||isNumber(loss)===false ||isNumber(record)===false )
+
+                    if(Ext.getCmp('Win').getValue()== "Record" || Ext.getCmp('Win').getValue()== "record")
+                    alert('Distance' + "   "  + 'Horse' + "   " + 'Time' + "   " + '\n' +
+                    '===========================' + "\n" +
+                    '5F' + " " + 'Kelly Kip' + "   " + ':55.75' + "   " + '\n' +
+                    '5 1/2F' + "   " + 'Mikes Classic'+ " " +'1:02.26' + "   " + '\n' +
+                    '6F' + " " + 'Artax' + " " + '1:07.66' + "   " + '\n' +
+                    '6 1/2F' + "   " + 'Super Shape (ARG)' + '1:14.46' + "   " + '\n' +
+                    '6 1/2F' + "   " + 'Bear Fan' + "    " + '1:14.46' + "   " + '\n' +
+                    '7F' + " " + 'Left Bank' + "   " + '1:20.17' + "   " + '\n' +
+                    '7 1/2F' + "   " + 'Commentator' + " " + '1:27.44' + "   " + '\n' +
+                    '1M' + " " + 'Najran' + "      " + '1:32.24' + "   " + '\n' +
+                    '1 1/16M' + "  " + 'Birdrun' + "     " + '1:39.38' + "   " + '\n' +
+                    '1 1/8M' + "   " + 'Secretariat' + " " + '1:45.40' + "   " + '\n' +
+                    '1 3/16M' + "  " + 'Lueders' + "     " + '1:56.00' + "   " + '\n' +
+                    '1 1/4M' + "   " + 'In Excess (IRE)' +""+ '1:58.33' + "   " + '\n' +
+                    '1 3/8M' + "   " + 'Victoriously' + "" + '2:14.72' + "   " + '\n' +
+                    '1 1/2M' + "   " + 'Secretariat' + " " + '2:24.00' + "   " + '\n' +
+                    '1 5/8M' + "   " + 'Man o War' + "   " + '2:40.80');
+
+
+                    else
+
+
+                    alert ("Somewhere in the fields there's an ERROR:\n\n Not a Valid Number!\n\nCheck:\n Win and Record must be filled in and a Number!\n Make sure Loss is a number or left Blank!");
+
+                    else
+
                     alert(	"Win is " + win + "\n" +
-                    "Loss is " + loss + "\n" +
+                    "Loss is " + loss + " Note: Loss multiplied by .2\n" +
                     "Record is " + record + "\n\n" + 
                     "Horse Grade is " + grade);
 
@@ -63,7 +95,18 @@ Ext.define('MyApp.view.MyFieldSet', {
                 xtype: 'image',
                 height: 166,
                 width: 299,
-                src: 'http://smallprogramdesign.com/myapp/horseracing.jpg'
+                src: 'http://localhost/myapp/horseracing.jpg'
+            },
+            {
+                xtype: 'button',
+                handler: function(button, event) {
+                    alert("Win = Winning Time on Race Form " + "\n\n" +
+                    "Loss = Length Loss By usually expressed by a faction 1 1/2 you must put into decimal form like 1.5 and if horse wins leave this blank" + "\n\n" +
+                    "Record = Track Record where race is held at race distance your grading. Example: For grading a Mile race the Track record for a mile long race at Belmont is 1:32.24 won by Najran you would put 134.24 in Record Field." + "\n\n" +
+                    "Notes: When entering time's from racing form leave out colon and any superscript enter them as decimal"+ "\n\n" + "To get Belmont Track Records type in 'record' without quotes in Win field then hit Calculate leave all other fields empty."+"\n\n");
+                },
+                ui: 'confirm',
+                text: 'Instructions'
             }
         ]
     }
