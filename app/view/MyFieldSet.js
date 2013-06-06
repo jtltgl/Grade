@@ -52,27 +52,28 @@ Ext.define('MyApp.view.MyFieldSet', {
                         return !isNaN(parseFloat(n)) && isFinite(n);
                     }
 
+                    
+
                     if(isNumber(win)===false||isNumber(loss)===false ||isNumber(record)===false )
-
-                    if(Ext.getCmp('Win').getValue()== "Record" || Ext.getCmp('Win').getValue()== "record")
-                    alert('Distance' + "   "  + 'Horse' + "   " + 'Time' + "   " + '\n' +
-                    '===========================' + "\n" +
-                    '5F' + " " + 'Kelly Kip' + "   " + ':55.75' + "   " + '\n' +
-                    '5 1/2F' + "   " + 'Mikes Classic'+ " " +'1:02.26' + "   " + '\n' +
-                    '6F' + " " + 'Artax' + " " + '1:07.66' + "   " + '\n' +
-                    '6 1/2F' + "   " + 'Super Shape (ARG)' + '1:14.46' + "   " + '\n' +
-                    '6 1/2F' + "   " + 'Bear Fan' + "    " + '1:14.46' + "   " + '\n' +
-                    '7F' + " " + 'Left Bank' + "   " + '1:20.17' + "   " + '\n' +
-                    '7 1/2F' + "   " + 'Commentator' + " " + '1:27.44' + "   " + '\n' +
-                    '1M' + " " + 'Najran' + "      " + '1:32.24' + "   " + '\n' +
-                    '1 1/16M' + "  " + 'Birdrun' + "     " + '1:39.38' + "   " + '\n' +
-                    '1 1/8M' + "   " + 'Secretariat' + " " + '1:45.40' + "   " + '\n' +
-                    '1 3/16M' + "  " + 'Lueders' + "     " + '1:56.00' + "   " + '\n' +
-                    '1 1/4M' + "   " + 'In Excess (IRE)' +""+ '1:58.33' + "   " + '\n' +
-                    '1 3/8M' + "   " + 'Victoriously' + "" + '2:14.72' + "   " + '\n' +
-                    '1 1/2M' + "   " + 'Secretariat' + " " + '2:24.00' + "   " + '\n' +
-                    '1 5/8M' + "   " + 'Man o War' + "   " + '2:40.80');
-
+		    
+		                        if(Ext.getCmp('Win').getValue().toUpperCase() == "RECORD")
+		                        alert('Distance' + "   "  + 'Horse' + "   " + 'Time' + "   " + '\n' +
+		                        '======================' + "\n" +
+					'5F           ' + 'Kelly Kip          ' + ':55.75' + '\n' +
+					'5 1/2F     ' + 'Mikes Classic   ' + '1:02.26' + '\n' +
+		                        '6F            ' + 'Artax                ' + '1:07.66'  + '\n' +
+		                        '6 1/2F      ' + 'Super Shape   ' + '1:14.46' + '\n' +
+		                        '6 1/2F      ' + 'Bear Fan          ' + '1:14.46'  + '\n' +
+		                        '7F            ' + 'Left Bank         ' + '1:20.17' + '\n' +
+		                        '7 1/2F      ' + 'Commentator ' + '1:27.44'  + '\n' +
+		                        '1M            ' + 'Najran              ' + '1:32.24'  + '\n' +
+		                        '1 1/16M    ' + 'Birdrun           ' + '1:39.38'  + '\n' +
+		                        '1 1/8M     ' + 'Secretariat       ' + '1:45.40'  + '\n' +
+		                        '1 3/16M    ' + 'Lueders           ' + '1:56.00'  + '\n' +
+		                        '1 1/4M     ' + 'In Excess (IRE)   ' + '1:58.33' + '\n' +
+		                        '1 3/8M     ' + 'Victoriously      ' + '2:14.72'  + '\n' +
+		                        '1 1/2M     ' + 'Secretariat        ' + '2:24.00'  + '\n' +
+                    			'1 5/8M     ' + 'Man o War       ' + '2:40.80');
 
                     else
 
@@ -95,7 +96,7 @@ Ext.define('MyApp.view.MyFieldSet', {
                 xtype: 'image',
                 height: 166,
                 width: 299,
-                src: 'http://localhost/myapp/horseracing.jpg'
+                src: 'http://smallprogramdesign.com/myapp/horseracing.jpg'
             },
             {
                 xtype: 'button',
