@@ -70,7 +70,7 @@ Ext.define('MyApp.view.MyFieldSet', {
 		                        '1 1/16M    ' + 'Birdrun           ' + '1:39.38'  + '\n' +
 		                        '1 1/8M     ' + 'Secretariat       ' + '1:45.40'  + '\n' +
 		                        '1 3/16M    ' + 'Lueders           ' + '1:56.00'  + '\n' +
-		                        '1 1/4M     ' + 'In Excess (IRE)   ' + '1:58.33' + '\n' +
+		                        '1 1/4M     ' + 'In Excess         ' + '1:58.33' + '\n' +
 		                        '1 3/8M     ' + 'Victoriously      ' + '2:14.72'  + '\n' +
 		                        '1 1/2M     ' + 'Secretariat        ' + '2:24.00'  + '\n' +
                     			'1 5/8M     ' + 'Man o War       ' + '2:40.80');
